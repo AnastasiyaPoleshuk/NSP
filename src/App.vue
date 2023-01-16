@@ -1,39 +1,32 @@
 <template>
-  <div class="app">
-    <Header></Header>
+  <HeaderComponent />
+  <main class="main">
     <router-view></router-view>
-    <Footer></Footer>
-  </div>
+  </main>
+  <FooterComponent />
 </template>
 
 <script>
 
-import Header from './components/Header/Header.vue';
-import Footer from './components/Footer/Footer.vue';
+import HeaderComponent from './components/Header/Header.vue';
+import FooterComponent from './components/Footer/Footer.vue';
 
 
-  const App = {
-    data() {
-        return {
-          text: 'test'
-        }
-    },
-    components: {
-      Header,
-      Footer
+const App = {
+  data() {
+    return {
+      text: 'test'
     }
-      
+  },
+  components: {
+    HeaderComponent,
+    FooterComponent,
   }
-  export default App;
+
+}
+export default App;
 </script>
 
 <style lang="scss">
 @import './App.variables.scss';
-
-  .app {
-    display: flex;
-    flex-direction: column;
-    max-width: $main-width;
-    margin: 0 auto;
-  }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <main class="main-view__container">
+  <section class="main-view__container">
     {{ text }}
-  </main>
+  </section>
 </template>
 
 <script>

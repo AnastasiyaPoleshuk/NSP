@@ -5,14 +5,14 @@
 </template>
 
 <script>
-const Footer = {
+const FooterComponent = {
   data() {
     return {
       text: 'footer'
     }
   },
 }
-export default Footer;
+export default FooterComponent;
 </script>
 
 <style lang="scss">
